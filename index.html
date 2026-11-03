@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#414244">
+  <meta name="theme-color" content="#303133">
   <title>Urban Edge Group — Our Ventures</title>
   <meta name="description" content="Meet Chris and Dimos and explore Urban Edge Group’s five ventures in technology, barbering, studio production, property care and music in Cyprus.">
   <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA2NCA2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiByeD0iNiIgZmlsbD0iIzEwMTAxMSIvPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDYgMTQpIHNrZXdYKC02KSI+PHBhdGggZD0iTTEgMmg2djE5YzAgNCAxIDcgNSA3czYtMiA2LTdWMmg2djIwYzAgOC00IDEyLTEyIDEyUzEgMjkgMSAyMloiIGZpbGw9IiNlZWUiLz48cGF0aCBkPSJNMjkgMmgyM3Y2SDM1djdoMTR2NkgzNXY3aDE3djZIMjlaIiBmaWxsPSIjYTFhMWE0Ii8+PC9nPjwvc3ZnPg0K">
@@ -36,9 +36,9 @@
     .skip { position: fixed; left: 15px; top: -80px; padding: 10px 16px; background: white; color: #222; z-index: 5; }
     .skip:focus { top: 10px; }
     .micro { font: 600 10px/1.4 var(--mono); letter-spacing: .10em; text-transform: uppercase; }
-    .sitehead { position: sticky; top: 0; z-index: 3; background: rgb(62 63 65 / .96); }
+    .sitehead { position: sticky; top: 0; z-index: 3; background: #303133; }
     @supports (backdrop-filter: blur(12px)) {
-      .sitehead { background: rgb(62 63 65 / .89); backdrop-filter: blur(12px); }
+      .sitehead { background: rgb(45 46 48 / .93); backdrop-filter: blur(12px); }
     }
     .topbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 76px; border-bottom: 1px solid var(--hairline); }
     .brand { display: inline-flex; min-height: 44px; align-items: center; gap: 12px; }
@@ -50,6 +50,8 @@
     .nav a:hover, .footer a:hover { text-decoration: underline; text-underline-offset: 5px; }
     .nav small { color: var(--muted); font: 10px var(--mono); }
 
+    .intro-band { background: rgb(0 0 0 / .16); }
+    .people-band { background: rgb(0 0 0 / .10); }
     .hero { padding-block: clamp(40px, 5.1vw, 76px) clamp(40px, 4.7vw, 70px); }
     .eyebrow { display: flex; align-items: center; gap: 10px; color: var(--text); }
     .eyebrow::before { content: ""; width: 24px; height: 1px; background: #c2c3c5; }
@@ -178,8 +180,8 @@
     </div></div>
   </header>
   <main id="main">
-    <div class="wrap">
-    <section class="hero" aria-labelledby="site-title">
+    <div class="intro-band">
+    <section class="hero wrap" aria-labelledby="site-title">
       <p class="eyebrow micro">Limassol, Cyprus</p>
       <h1 id="site-title"><span>Urban Edge</span> <em>Group.</em></h1>
       <div class="hero-base">
@@ -228,7 +230,7 @@
       </ol>
     </section>
     </div></div>
-    <div class="wrap">
+    <div class="people-band"><div class="wrap">
     <section id="about" class="section" aria-labelledby="about-title">
       <div>
         <p class="section-label micro">02 &nbsp;/&nbsp; The people</p>
@@ -239,8 +241,8 @@
         <p>Our work together also takes us into technology with ASI-NEXUS and property care with Eco Shield. UE Studios, our video production studio, is the newest addition to the group.</p>
       </div>
     </section>
-    </div>
+    </div></div>
   </main>
-  <footer class="wrap"><div class="footer"><p>© Urban Edge Group · Limassol, Cyprus</p><a href="#top">Back to top <svg aria-hidden="true"><use href="#arrow-down"/></svg></a></div></footer>
+  <footer class="people-band"><div class="wrap"><div class="footer"><p>© Urban Edge Group · Limassol, Cyprus</p><a href="#top">Back to top <svg aria-hidden="true"><use href="#arrow-down"/></svg></a></div></div></footer>
 </body>
 </html>
