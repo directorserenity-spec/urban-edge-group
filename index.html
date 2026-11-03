@@ -39,20 +39,18 @@
     .nav small { font: 10px var(--mono); color: var(--sub); align-self: center; }
     .location { display: inline-flex; align-items: center; gap: 9px; }
     .location svg { width: 16px; height: 16px; }
-    .hero { display: grid; grid-template-columns: 1.02fr 1fr; gap: clamp(28px, 5vw, 88px); align-items: center; padding-block: clamp(34px, 3.7vw, 62px) clamp(44px, 4.3vw, 78px); }
+    .hero { padding-block: clamp(38px, 4vw, 66px) clamp(44px, 4.6vw, 76px); }
     .kicker { display: flex; align-items: center; gap: 10px; margin: 0; }
     .kicker::before { content: ""; width: 24px; height: 1px; background: var(--silver); }
     h1, h2, h3, p { margin: 0; }
     h1 { margin: clamp(22px, 2.4vw, 42px) 0 22px -.065em; font-size: clamp(75px, 7.6vw, 124px); line-height: .866; font-weight: 720; letter-spacing: -.089em; }
-    h1 span { display: block; white-space: nowrap; }
+    h1 span { white-space: nowrap; }
     .accent { color: var(--silver); }
     .hero em { font-family: Georgia, "Times New Roman", serif; font-weight: 400; color: #ddd; }
-    .intro { color: var(--sub); font-size: clamp(16px, 1.25vw, 20px); line-height: 1.51; max-width: 37ch; letter-spacing: -.018em; }
+    .intro { color: var(--sub); font-size: clamp(16px, 1.25vw, 20px); line-height: 1.51; max-width: 53ch; letter-spacing: -.018em; }
     .button { margin-top: 26px; background: var(--ink); color: var(--paper); min-height: 45px; display: inline-flex; align-items: center; gap: 25px; padding: 0 17px; font-size: 13px; font-weight: 650; border-radius: 4px; }
     .button svg { width: 16px; height: 16px; }
     .button:hover { background: #d3d3d3; }
-    .plate { margin: 0; position: relative; isolation: isolate; background: #242425; aspect-ratio: 660/470; overflow: hidden; border: 1px solid #39393c; }
-    .plate img { width: 100%; height: 100%; display: block; object-fit: cover; }
     .directory-band { --paper: #efefef; --ink: #171717; --line: #c9c9c9; --sub: #505052; color: var(--ink); background: var(--paper); }
     .directory { padding: clamp(35px, 3.7vw, 65px) 0 clamp(46px, 5vw, 85px); }
     .section-head { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: clamp(22px, 2.5vw, 42px); gap: 15px; }
@@ -101,11 +99,9 @@
     .footer a:focus-visible { outline-color: var(--silver); }
     .sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
     @media (max-width: 900px) {
-      .hero { grid-template-columns: 1fr 1fr; gap: 30px; }
       h1 { font-size: clamp(62px, 8.45vw, 80px); }
       .item { grid-template-columns: 23px 82px minmax(0,.85fr) minmax(0,1fr) 84px; gap: 16px; min-height: 102px; }
       .desc { font-size: 14px; }
-      .plate { aspect-ratio: 1.2; }
       .studio-lockup, .dj-lockup > span { display: none; }
       .studio-compact { display: block; position: absolute; inset: 8%; }
       .studio-compact img { display: block; width: 100%; height: 100%; object-fit: contain; }
@@ -119,12 +115,10 @@
       .brand-name { font-size: 10px; padding-left: 7px; }
       .nav { gap: 18px; font-size: 12px; }
       .nav small { display: none; }
-      .hero { grid-template-columns: minmax(0,1fr); gap: 33px; padding-block: 36px; }
+      .hero { padding-block: 36px; }
       h1 { font-size: clamp(56px, 17.3vw, 98px); margin-block: 23px 17px; }
       .intro { max-width: 39ch; }
       .button { margin-top: 19px; }
-      .plate { aspect-ratio: 1.48; }
-      .plate img { object-fit: cover; }
       .section-head .micro { font-size: 9px; }
       .item { grid-template-columns: 62px minmax(0,1fr) 34px; column-gap: 14px; row-gap: 5px; padding-block: 19px; }
       .num { display: none; }
@@ -174,15 +168,10 @@
   <main id="main">
     <div class="wrap">
       <section class="hero" aria-labelledby="site-title">
-        <div>
-          <p class="kicker micro">Independent business group</p>
-          <h1 id="site-title"><span>Urban Edge</span><span><em>Group.</em></span></h1>
-          <p class="intro">From the barber’s chair to the DJ booth, explore the businesses we’re building together in Cyprus.</p>
-          <a href="#ventures" class="button">Explore our ventures <svg aria-hidden="true"><use href="#arrow-down"/></svg></a>
-        </div>
-        <figure class="plate" aria-label="Silver Urban Edge Group badge engraved with Limassol, Cyprus">
-          <img width="660" height="470" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNjYwIDQ3MCIgcm9sZT0iaW1nIiBhcmlhLWxhYmVsPSJBIHNpbHZlciBVcmJhbiBFZGdlIEdyb3VwIGJhZGdlIG9uIGdyYXBoaXRlIj4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iZ3JvdW5kIiBjeD0iLjM3IiBjeT0iLjEyIiByPSIxLjA1Ij48c3RvcCBzdG9wLWNvbG9yPSIjNDQ0NDQ2Ii8+PHN0b3Agb2Zmc2V0PSIuNTIiIHN0b3AtY29sb3I9IiMyNTI1MjciLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMxMDEwMTEiLz48L3JhZGlhbEdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJyaW0iIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCI+PHN0b3Agc3RvcC1jb2xvcj0iIzY1NjU2OCIvPjxzdG9wIG9mZnNldD0iLjE4IiBzdG9wLWNvbG9yPSIjZWVlIi8+PHN0b3Agb2Zmc2V0PSIuMzkiIHN0b3AtY29sb3I9IiM2ZjZmNzIiLz48c3RvcCBvZmZzZXQ9Ii41NCIgc3RvcC1jb2xvcj0iIzIzMjMyNSIvPjxzdG9wIG9mZnNldD0iLjcwIiBzdG9wLWNvbG9yPSIjZDJkMmQ0Ii8+PHN0b3Agb2Zmc2V0PSIuODQiIHN0b3AtY29sb3I9IiM2MTYxNjQiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhYWEiLz48L2xpbmVhckdyYWRpZW50PgogICAgPGxpbmVhckdyYWRpZW50IGlkPSJzaWx2ZXIiIHgxPSIwIiB5MT0iMCIgeDI9Ii45IiB5Mj0iMSI+PHN0b3Agc3RvcC1jb2xvcj0id2hpdGUiLz48c3RvcCBvZmZzZXQ9Ii4yNyIgc3RvcC1jb2xvcj0iI2U0ZTRlNSIvPjxzdG9wIG9mZnNldD0iLjUzIiBzdG9wLWNvbG9yPSIjOTk5OTlkIi8+PHN0b3Agb2Zmc2V0PSIuNzEiIHN0b3AtY29sb3I9IiNlMmUyZTMiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiNhMmEyYTYiLz48L2xpbmVhckdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJmYWNlIiBjeD0iLjMyIiBjeT0iLjE4IiByPSIuOTUiPjxzdG9wIHN0b3AtY29sb3I9IiM0NjQ2NDgiLz48c3RvcCBvZmZzZXQ9Ii40MiIgc3RvcC1jb2xvcj0iIzMxMzEzMiIvPjxzdG9wIG9mZnNldD0iLjgzIiBzdG9wLWNvbG9yPSIjMWUxZTFmIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMTIxMjEzIi8+PC9yYWRpYWxHcmFkaWVudD4KICAgIDxwYXR0ZXJuIGlkPSJicnVzaCIgd2lkdGg9IjMiIGhlaWdodD0iNCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgLjNoMyIgc3Ryb2tlPSIjZmZmIiBvcGFjaXR5PSIuMDQiIHN0cm9rZS13aWR0aD0iLjUiLz48cGF0aCBkPSJNMCAyaDMiIHN0cm9rZT0iIzAwMCIgb3BhY2l0eT0iLjE4IiBzdHJva2Utd2lkdGg9Ii43Ii8+PC9wYXR0ZXJuPgogICAgPGZpbHRlciBpZD0iZ3JhaW4iPjxmZVR1cmJ1bGVuY2UgdHlwZT0iZnJhY3RhbE5vaXNlIiBiYXNlRnJlcXVlbmN5PSIuNzQiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48ZmVDb2xvck1hdHJpeCB0eXBlPSJzYXR1cmF0ZSIgdmFsdWVzPSIwIi8+PC9maWx0ZXI+CiAgICA8ZmlsdGVyIGlkPSJzaGFkb3ciIHg9Ii0uNTUiIHk9Ii0uNyIgd2lkdGg9IjIuMSIgaGVpZ2h0PSIyLjQiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjE0Ii8+PC9maWx0ZXI+CiAgICA8cGF0aCBpZD0idXBwZXIiIGQ9Ik0tMTMwIDBhMTMwIDEzMCAwIDAgMSAyNjAgMCIvPgogICAgPHBhdGggaWQ9Imxvd2VyIiBkPSJNLTE0OSAwYTE0OSAxNDkgMCAwIDAgMjk4IDAiLz4KICAgIDxnIGlkPSJ1ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTkyLC01NSkgc2tld1goLTYpIHNjYWxlKDMuNTUpIj4KICAgICAgPHBhdGggZD0iTTEgMmg2djE5YzAgNCAxIDcgNSA3czYtMiA2LTdWMmg2djIwYzAgOC00IDEyLTEyIDEyUzEgMjkgMSAyMloiLz4KICAgICAgPHBhdGggZD0iTTI5IDJoMjN2NkgzNXY3aDE0djZIMzV2N2gxN3Y2SDI5WiIvPgogICAgPC9nPgogIDwvZGVmcz4KICA8cmVjdCB3aWR0aD0iNjYwIiBoZWlnaHQ9IjQ3MCIgZmlsbD0idXJsKCNncm91bmQpIi8+CiAgPHJlY3Qgd2lkdGg9IjY2MCIgaGVpZ2h0PSI0NzAiIGZpbGw9IiM4ODgiIGZpbHRlcj0idXJsKCNncmFpbikiIG9wYWNpdHk9Ii4wODUiLz4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgzMzcgMjI4KSByb3RhdGUoLTE0KSBza2V3WCgtNSkgc2NhbGUoMSAuOTEpIj4KICAgIDxlbGxpcHNlIGN4PSI1IiBjeT0iMjkiIHJ4PSIyMDUiIHJ5PSIyMDUiIGZpbGw9IiMwNzA3MDciIG9wYWNpdHk9Ii44NSIgZmlsdGVyPSJ1cmwoI3NoYWRvdykiLz4KICAgIDxjaXJjbGUgY3k9IjEwIiByPSIyMDIiIGZpbGw9IiMxMjEyMTMiIHN0cm9rZT0iIzEwMTAxMCIgc3Ryb2tlLXdpZHRoPSIyIi8+CiAgICA8Y2lyY2xlIGN5PSI3IiByPSIyMDEuNSIgc3Ryb2tlPSIjNTg1ODVhIiBzdHJva2Utd2lkdGg9IjEuNCIgZmlsbD0iIzI4MjgyYSIvPgogICAgPGNpcmNsZSBjeT0iNCIgcj0iMjAxLjUiIHN0cm9rZT0iIzQ3NDc0OSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSIjMzEzMTMyIi8+CiAgICA8Y2lyY2xlIHI9IjIwMiIgZmlsbD0idXJsKCNyaW0pIi8+PGNpcmNsZSByPSIxOTkiIGZpbGw9IiMyNTI1MjYiLz4KICAgIDxjaXJjbGUgcj0iMTk3IiBmaWxsPSJ1cmwoI3JpbSkiLz48Y2lyY2xlIHI9IjE5NCIgZmlsbD0idXJsKCNmYWNlKSIvPgogICAgPGNpcmNsZSByPSIxOTMuNyIgZmlsbD0idXJsKCNicnVzaCkiLz4KICAgIDxjaXJjbGUgcj0iMTgxLjUiIHN0cm9rZT0idXJsKCNyaW0pIiBzdHJva2Utd2lkdGg9IjEuMTUiIGZpbGw9Im5vbmUiLz4KICAgIDxjaXJjbGUgcj0iMTczIiBzdHJva2U9IiM4OTg5OGIiIHN0cm9rZS13aWR0aD0iLjciIGZpbGw9Im5vbmUiLz4KICAgIDxjaXJjbGUgcj0iMTExIiBzdHJva2U9IiM3MjcyNzQiIHN0cm9rZS13aWR0aD0iLjgiIGZpbGw9Im5vbmUiLz4KICAgIDxjaXJjbGUgcj0iMTA3LjUiIHN0cm9rZT0iIzEwMTAxMSIgc3Ryb2tlLXdpZHRoPSIyIiBmaWxsPSJub25lIi8+CiAgICA8ZyBmb250LWZhbWlseT0iQXJpYWwsIEhlbHZldGljYSwgc2Fucy1zZXJpZiIgZmlsbD0iI2UxZTFlMSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+CiAgICAgIDx0ZXh0IGZvbnQtc2l6ZT0iMjYiIGZvbnQtd2VpZ2h0PSI3MDAiIGxldHRlci1zcGFjaW5nPSI0LjMiPjx0ZXh0UGF0aCB4bGluazpocmVmPSIjdXBwZXIiIHN0YXJ0T2Zmc2V0PSI1MCUiPlVSQkFOIEVER0UgR1JPVVA8L3RleHRQYXRoPjwvdGV4dD4KICAgICAgPHRleHQgZm9udC1zaXplPSIxNyIgZm9udC13ZWlnaHQ9IjYwMCIgbGV0dGVyLXNwYWNpbmc9IjQuMiI+PHRleHRQYXRoIHhsaW5rOmhyZWY9IiNsb3dlciIgc3RhcnRPZmZzZXQ9IjUwJSI+TElNQVNTT0wgwrcgQ1lQUlVTPC90ZXh0UGF0aD48L3RleHQ+CiAgICA8L2c+CiAgICA8ZyBmaWxsPSJ1cmwoI3JpbSkiIHN0cm9rZT0iIzExMSIgc3Ryb2tlLXdpZHRoPSIxIj48Y2lyY2xlIGN4PSItMTQ0IiBjeT0iMCIgcj0iNC4xIi8+PGNpcmNsZSBjeD0iMTQ0IiBjeT0iMCIgcj0iNC4xIi8+PC9nPgogICAgPHVzZSB4bGluazpocmVmPSIjdWUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIgNCkiIGZpbGw9IiMwOTA5MDkiIHN0cm9rZT0iIzEwMTAxMCIgc3Ryb2tlLXdpZHRoPSIuNyIvPgogICAgPHVzZSB4bGluazpocmVmPSIjdWUiIGZpbGw9InVybCgjc2lsdmVyKSIgc3Ryb2tlPSIjYmNiY2JmIiBzdHJva2Utd2lkdGg9Ii4xOSIvPgogICAgPHVzZSB4bGluazpocmVmPSIjdWUiIGZpbGw9InVybCgjYnJ1c2gpIi8+CiAgPC9nPgo8L3N2Zz4K" alt="" fetchpriority="high">
-        </figure>
+        <p class="kicker micro">Independent business group</p>
+        <h1 id="site-title"><span>Urban Edge</span> <em>Group.</em></h1>
+        <p class="intro">From the barber’s chair to the DJ booth, explore the businesses we’re building together in Cyprus.</p>
+        <a href="#ventures" class="button">Explore our ventures <svg aria-hidden="true"><use href="#arrow-down"/></svg></a>
       </section>
     </div>
     <div class="directory-band"><div class="wrap">
