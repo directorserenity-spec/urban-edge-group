@@ -12,4 +12,4 @@ When the group domain is ready, upload `index.html` to that domain’s `public_h
 
 ## Venture links
 
-The directory links to Eco Shield, ASI NEXUS, DJ Chris NRG on Facebook, and Urban Edge Barbers. UE Studios is marked as in development until its website address is ready.
+The directory links to Eco Shield, ASI-NEXUS, DJ Chris NRG on Facebook, and Urban Edge Barbers. UE Studios is marked as in development until its website address is ready.
