@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://urbanedgegroup.com.cy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://urbanedgegroup.com.cy/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://urbanedgegroup.com.cy/el/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://urbanedgegroup.com.cy/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://urbanedgegroup.com.cy/" />
+  </url>
+  <url>
+    <loc>https://urbanedgegroup.com.cy/el/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://urbanedgegroup.com.cy/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://urbanedgegroup.com.cy/el/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://urbanedgegroup.com.cy/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://urbanedgegroup.com.cy/" />
+  </url>
+  <url>
+    <loc>https://urbanedgegroup.com.cy/ru/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://urbanedgegroup.com.cy/" />
+    <xhtml:link rel="alternate" hreflang="el" href="https://urbanedgegroup.com.cy/el/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://urbanedgegroup.com.cy/ru/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://urbanedgegroup.com.cy/" />
+  </url>
+</urlset>
